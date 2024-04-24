@@ -146,6 +146,8 @@ dataSources:
 
 The important entries to update for the manifest are:
 
+- `specVersion`: a Semver version indicating which version of this API is being used. See [versions](#versions) section to see more details on features & releases.
+
 - `description`: a human-readable description of what the subgraph is. This description is displayed by the Graph Explorer when the subgraph is deployed to the hosted service.
 
 - `repository`: the URL of the repository where the subgraph manifest can be found. This is also displayed by The Graph Explorer.
@@ -185,6 +187,22 @@ The triggers for a data source within a block are ordered using the following pr
 These ordering rules are subject to change.
 
 > **Note:** When new [dynamic data source](#data-source-templates-for-dynamically-created-contracts) are created, the handlers defined for dynamic data sources will only start processing after all existing data source handlers are processed, and will repeat in the same sequence whenever triggered.
+
+### Versions
+
+The `specVersion` in the subgraph manifest specifies the semver version indicating which version of this API is being used in the subgraph.
+
+| Version | Release notes |
+| :-----: | ------------- |
+|  1.2.0  |               |
+|  1.1.0  |               |
+|  1.0.0  |               |
+|  0.0.9  |               |
+|  0.0.8  |               |
+|  0.0.7  |               |
+|  0.0.6  |               |
+|  0.0.5  |               |
+|  0.0.4  |               |
 
 ### Getting The ABIs
 
